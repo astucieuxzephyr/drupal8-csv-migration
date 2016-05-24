@@ -1,17 +1,15 @@
 # Module Drupal8 tbh_csv
 ==============================================================
 ## Description :
--------------
 Ce module Drupal8 permet de faire la démonstration d'une migration avec un fichier de données CSV.
 L'installation du module ne fait aucune autre action que celle d'enregistrer la configuration en base.
 Pour effectuer les migrations, on utilise ensuite la ligne de commande avec __Drush__ (Drupal Shell)
 
 ## Voir aussi :
  - https://www.drupal.org/node/2574707
- -
+
 ==============================================================
 # Prérequis :
- -----------
 ## 1) avoir installé les modules suivants
    - tbh_csv (ce module)
    - migrate_plus
@@ -22,7 +20,6 @@ __Drush__ est en effet nécessaire pour faire les migrations, qu'on lancera via 
 
 ==============================================================
 # Paramétrages / Configuration :
-------------------------------
 Le fichier de configuration (à paramétrer) est
   tbh_csv\config\install\migrate_plus.migration.migrate_csv.yml
 
