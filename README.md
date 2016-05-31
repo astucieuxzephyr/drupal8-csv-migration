@@ -23,7 +23,7 @@ __Drush__ est en effet nécessaire pour faire les migrations, qu'on lancera via 
 Le fichier de configuration (à paramétrer) est
   tbh_csv\config\install\migrate_plus.migration.migrate_csv.yml
 
-##1) FICHIER DE DONNEES
+##1) Fichier de données
 Le fichier contenant les données au format CSV doit par défaut être situé dans :
   public://csv/people.csv
 Ce qui correspond au dossier :
@@ -35,7 +35,7 @@ indique quel doit être le fichier de données CSV
 
 Il vous est ainsi possible de changer ce fichier ainsi que son emplacement
 
-##2) IDENTIFIANT DE LA MIGRATION
+##2) Identifiant de la migration
 La première ligne du fichier de configuration (yml), est la suivante :
 id: csv_file_people
 Cet identifiant est celui à utiliser lors de la commande Drush de migration.
@@ -83,12 +83,13 @@ Id2,title,body
 # Problèmes potentiels / Troubleshooting
 ==============================================================
 Lorsque vous lancez la commande
-```
+```shell
    drush migrate:status
 ```
 Si l'erreur suivante apparaît :
+```shell
 Fatal error: Unsupported operand types in C:\wamp\www\drupal8\core\modules\migrate\src\Plugin\Migration.php on line 665
-
+```
 Corrigez le fichier drupal8\core\modules\migrate\src\Plugin\Migration.php
 en remplaçant la fonction getMigrationDependencies() par le code suivant
 
