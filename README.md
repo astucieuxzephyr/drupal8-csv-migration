@@ -8,7 +8,6 @@ Pour effectuer les migrations, on utilise ensuite la ligne de commande avec __Dr
 ## Voir aussi :
  - https://www.drupal.org/node/2574707
 
-==============================================================
 ## Prérequis :
 ### 1) avoir installé les modules suivants
    - tbh_csv (ce module)
@@ -21,7 +20,7 @@ __Drush__ est en effet nécessaire pour faire les migrations, qu'on lancera via 
 ==============================================================
 # Paramétrages / Configuration :
 Le fichier de configuration (à paramétrer) est
-  tbh_csv\config\install\migrate_plus.migration.migrate_csv.yml
+> tbh_csv\config\install\migrate_plus.migration.migrate_csv.yml
 
 ##1) Fichier de données
 Le fichier contenant les données au format CSV doit par défaut être situé dans :
@@ -46,7 +45,6 @@ Il vous est ainsi possible de changer cet identifiant.
 
 ==============================================================
 # Commandes de migration (avec Drush)
-==============================================================
 Les commandes Drush utiles sont les suivantes :
 ```shell
     drush status
@@ -65,7 +63,6 @@ par exemple : drush migrate:import
 
 ==============================================================
 # Exemples de fichiers CSV
-==============================================================
 ## Fichier people.csv
 ```csv
 id,first_name,last_name,email,country,ip_address
@@ -81,7 +78,6 @@ Id2,title,body
 ```
 ==============================================================
 # Problèmes potentiels / Troubleshooting
-==============================================================
 Lorsque vous lancez la commande
 ```shell
    drush migrate:status
@@ -104,5 +100,3 @@ public function getMigrationDependencies() {
   return $this->migration_dependencies;
 }
 ```
-
-==============================================================
