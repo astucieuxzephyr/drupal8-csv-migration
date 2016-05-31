@@ -1,0 +1,9 @@
+name: tbh_csv
+type: module
+description: Migration de données issues de fichier csv
+core: 8.x
+package: 'Outils TBH'
+dependencies:
+  - migrate_source_csv
+  - migrate_plus
+  - migrate_tools

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/tbh_csv",
+  "type": "drupal-module",
+  "description": "migration csv",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/tbh_csv",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/tbh_csv",
+    "source": "http://cgit.drupalcode.org/tbh_csv"
+  },
+  "require": { }
+}
