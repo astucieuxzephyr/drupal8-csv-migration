@@ -9,13 +9,13 @@ Pour effectuer les migrations, on utilise ensuite la ligne de commande avec __Dr
  - https://www.drupal.org/node/2574707
 
 ==============================================================
-# Prérequis :
-## 1) avoir installé les modules suivants
+## Prérequis :
+### 1) avoir installé les modules suivants
    - tbh_csv (ce module)
    - migrate_plus
    - migrate_tools
 
-## 2) avoir installé Drush (version >8)
+### 2) avoir installé Drush (version >8)
 __Drush__ est en effet nécessaire pour faire les migrations, qu'on lancera via la ligne de commande.
 
 ==============================================================
@@ -45,7 +45,7 @@ Lors de la migration en ligne de commande, on fera donc :
 Il vous est ainsi possible de changer cet identifiant.
 
 ==============================================================
-# Commandes Drush
+# Commandes de migration (avec Drush)
 ==============================================================
 Les commandes Drush utiles sont les suivantes :
 ```shell
