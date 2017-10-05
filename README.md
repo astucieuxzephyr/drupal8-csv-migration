@@ -1,5 +1,5 @@
 # Module Drupal8 tbh_csv
-==============================================================
+
 ## Description :
 Ce module Drupal8 permet de faire la démonstration d'une migration avec un fichier de données CSV.
 L'installation du module ne fait aucune autre action que celle d'enregistrer la configuration en base.
@@ -17,7 +17,7 @@ Pour effectuer les migrations, on utilise ensuite la ligne de commande avec __Dr
 ### 2) avoir installé Drush (version >8)
 __Drush__ est en effet nécessaire pour faire les migrations, qu'on lancera via la ligne de commande.
 
-==============================================================
+
 # Paramétrages / Configuration :
 Le fichier de configuration (à paramétrer) est
 > tbh_csv\config\install\migrate_plus.migration.migrate_csv.yml
@@ -43,25 +43,24 @@ Lors de la migration en ligne de commande, on fera donc :
 
 Il vous est ainsi possible de changer cet identifiant.
 
-==============================================================
+
 # Commandes de migration (avec Drush)
 Les commandes Drush utiles sont les suivantes :
+* Pour voir le statut des migrations :
 ```shell
     drush status
 ```
-==> permet de voir le statut des migrations
-
+* Pour lancer la migration souhaitée (qui correspond à l'identifiant situé ds la configuration YAML) :
 ```shell
     drush migrate:import nom_migration
 ```
-==> permet de lancer la migration souhaitée (qui correspond à l'identifiant situé ds la configuration YAML)
-par exemple : drush migrate:import
+* Supprimer les données d'une migration :
 ```shell
     drush migrate:rollback
 ```
-==> permet de supprimer les données d'une migration
 
-==============================================================
+
+
 # Exemples de fichiers CSV
 ## Fichier people.csv
 ```csv
@@ -76,7 +75,7 @@ Id2,title,body
 2,title 2,some body text 2
 3,title 3,some body text 3
 ```
-==============================================================
+
 # Problèmes potentiels / Troubleshooting
 Lorsque vous lancez la commande
 ```shell
